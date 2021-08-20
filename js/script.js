@@ -99,6 +99,6 @@ function updateTaskInfo(completedTask, totalTask) {
 addTaskForm.addEventListener('submit', addTask);
 
 tasksUl.addEventListener('click', function (event) {
-  debugger;
+  // debugger;
   toggleComplete(event);
 });
