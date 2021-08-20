@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Title -->
+    <title>Task Tracker</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="container">
+        <h2>TASK TRACKER:</h2>
+      </div>
+    </header>
+    <!-- /header -->
+    <main>
+      <!-- task info -->
+      <section>
+        <div class="container">
+          <div id="task-info">
+            <p>
+              Total Task:
+              <span id="total-task">2</span>
+            </p>
+            <p>
+              Incomplete Task:
+              <span id="incomplete-task">1</span>
+            </p>
+            <p>
+              Completed Task:
+              <span id="completed-task">1</span>
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- /task info -->
+
+      <!-- add task -->
+      <section>
+        <div class="container">
+          <form id="add-task-form">
+            <h3>ADD NEW TASK:</h3>
+            <textarea
+              id="task-field"
+              placeholder="Type your task here..."
+            ></textarea>
+            <button type="submit">ADD TASK</button>
+          </form>
+        </div>
+      </section>
+      <!-- /add task -->
+
+      <!-- tasks -->
+      <section>
+        <div class="container">
+          <h2>YOUR TASKS:</h2>
+          <ul id="tasks">
+            <li class="task">
+              <input class="toggle-status" type="checkbox" />
+              <p>Task 1</p>
+              <span class="task-status incomplete">Incomple</span>
+            </li>
+            <li class="task">
+              <input class="toggle-status" type="checkbox" />
+              <p>Task 2</p>
+              <span class="task-status complete">Complete</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- /tasks -->
+    </main>
+    <!-- JS file -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
