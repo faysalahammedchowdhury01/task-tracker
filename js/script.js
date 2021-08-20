@@ -39,7 +39,7 @@ function createTask(task) {
 
 function addTask(event) {
   event.preventDefault();
-  // get task
+  // get task value
   const task = taskField.value;
 
   // validate
