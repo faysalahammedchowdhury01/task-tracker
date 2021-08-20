@@ -107,22 +107,17 @@ h2 {
 #tasks .task {
   list-style: none;
   color: #ffffff;
-}
-
-#tasks .task {
   background-color: #183849;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   margin: 10px 0;
   border-radius: 5px;
 }
 
 #tasks .task * {
   margin: 10px;
-}
-
-#tasks .task p {
-  flex-grow: 1;
+  word-wrap: break-word;
 }
 
 .task-status {
@@ -130,12 +125,13 @@ h2 {
   font-size: 14px;
   border-radius: 28px;
   padding: 0 5px;
+  margin-left: auto !important;
 }
 
-.task-status.complete {
+.complete .task-status {
   background-color: #10b981;
 }
 
-.task-status.incomplete {
+.incomplete .task-status {
   background-color: #ef4444;
 }
